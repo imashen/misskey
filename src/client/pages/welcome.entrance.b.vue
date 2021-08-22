@@ -128,6 +128,12 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+a {
+  &.github-corner {
+    display: none;
+  }
+}
+
 .rsqzvsbo {
 	> .top {
 		min-height: 100vh;
