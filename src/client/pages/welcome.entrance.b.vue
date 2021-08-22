@@ -29,7 +29,7 @@
 				</I18n>
 			</div>
 		</div>
-		<img src="/static-assets/client/misskey.svg" class="misskey"/>
+		<img src="https://cdn.imashen.cn/img/svg/misskey.svg" class="misskey"/>
 	</div>
 </div>
 </template>

@@ -5,14 +5,7 @@
 		<XTimeline class="tl"/>
 		<div class="shape1"></div>
 		<div class="shape2"></div>
-		<img src="/static-assets/client/misskey.svg" class="misskey"/>
-		<div class="emojis">
-			<MkEmoji :normal="true" :no-style="true" emoji="👍"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="❤"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="😆"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="🎉"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
-		</div>
+		<img src="https://cdn.imashen.cn/img/svg/misskey.svg" class="misskey"/>
 		<div class="main _panel">
 			<div class="bg">
 				<div class="fade"></div>
@@ -43,7 +36,6 @@
 						<template #n><b>{{ onlineUsersCount }}</b></template>
 					</I18n>
 				</div>
-				<button class="_button _acrylic menu" @click="showMenu"><i class="fas fa-ellipsis-h"></i></button>
 			</div>
 		</div>
 	</div>
