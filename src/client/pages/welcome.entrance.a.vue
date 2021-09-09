@@ -5,7 +5,14 @@
 		<XTimeline class="tl"/>
 		<div class="shape1"></div>
 		<div class="shape2"></div>
-		<img src="https://cdn.imashen.cn/img/svg/misskey.svg" class="misskey"/>
+		<img src="/static-assets/client/misskey.svg" class="misskey"/>
+		<div class="emojis">
+			<MkEmoji :normal="true" :no-style="true" emoji="👍"/>
+			<MkEmoji :normal="true" :no-style="true" emoji="❤"/>
+			<MkEmoji :normal="true" :no-style="true" emoji="😆"/>
+			<MkEmoji :normal="true" :no-style="true" emoji="🎉"/>
+			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
+		</div>
 		<div class="main _panel">
 			<div class="bg">
 				<div class="fade"></div>
@@ -20,8 +27,8 @@
 					<div class="desc" v-html="meta.description || $ts.headlineMisskey"></div>
 				</div>
 				<div class="action">
-					<MkButton @click="signup()" inline primary>{{ $ts.signup }}</MkButton>
-					<MkButton @click="signin()" inline>{{ $ts.login }}</MkButton>
+					<MkButton @click="signup()" inline primary data-cy-signup>{{ $ts.signup }}</MkButton>
+					<MkButton @click="signin()" inline data-cy-signin>{{ $ts.login }}</MkButton>
 				</div>
 				<div class="status" v-if="onlineUsersCount && stats">
 					<div>
@@ -36,6 +43,7 @@
 						<template #n><b>{{ onlineUsersCount }}</b></template>
 					</I18n>
 				</div>
+				<button class="_button _acrylic menu" @click="showMenu"><i class="fas fa-ellipsis-h"></i></button>
 			</div>
 		</div>
 	</div>
@@ -136,12 +144,6 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-a {
-  &.github-corner {
-    display: none;
-  }
-}
-
 .rsqzvsbo {
 	> .top {
 		display: flex;
