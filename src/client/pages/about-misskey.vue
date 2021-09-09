@@ -14,24 +14,8 @@
 			{{ $ts._aboutMisskey.about }}<br><MkA class="_link" to="/docs/general/misskey">{{ $ts.learnMore }}</MkA>
 		</section>
 		<FormGroup>
-			<FormLink to="https://github.com/misskey-dev/misskey" external>
-				<template #icon><i class="fas fa-code"></i></template>
-				{{ $ts._aboutMisskey.source }}
-				<template #suffix>GitHub</template>
-			</FormLink>
-			<FormLink to="https://crowdin.com/project/misskey" external>
-				<template #icon><i class="fas fa-language"></i></template>
-				{{ $ts._aboutMisskey.translation }}
-				<template #suffix>Crowdin</template>
-			</FormLink>
-			<FormLink to="https://www.patreon.com/syuilo" external>
-				<template #icon><i class="fas fa-hand-holding-medical"></i></template>
-				{{ $ts._aboutMisskey.donate }}
-				<template #suffix>Patreon</template>
-			</FormLink>
-		</FormGroup>
-		<FormGroup>
 			<template #label>{{ $ts._aboutMisskey.contributors }}</template>
+			<FormLink to="https://github.com/TaylorLottner" external>@imashen</FormLink>
 			<FormLink to="https://github.com/syuilo" external>@syuilo</FormLink>
 			<FormLink to="https://github.com/AyaMorisawa" external>@AyaMorisawa</FormLink>
 			<FormLink to="https://github.com/mei23" external>@mei23</FormLink>

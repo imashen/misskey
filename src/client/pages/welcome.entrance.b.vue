@@ -29,7 +29,7 @@
 				</I18n>
 			</div>
 		</div>
-		<img src="/static-assets/client/misskey.svg" class="misskey"/>
+		<img src="https://cdn.imashen.cn/img/svg/misskey/misskey.svg" class="misskey"/>
 	</div>
 </div>
 </template>
@@ -128,6 +128,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+a {
+  &.github-corner {
+    display: none;
+  }
+}
 .rsqzvsbo {
 	> .top {
 		min-height: 100vh;

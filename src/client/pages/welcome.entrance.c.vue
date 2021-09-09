@@ -3,15 +3,8 @@
 	<div class="top">
 		<MkFeaturedPhotos class="bg"/>
 		<div class="fade"></div>
-		<div class="emojis">
-			<MkEmoji :normal="true" :no-style="true" emoji="👍"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="❤"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="😆"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="🎉"/>
-			<MkEmoji :normal="true" :no-style="true" emoji="🍮"/>
-		</div>
 		<div class="main">
-			<img src="/static-assets/client/misskey.svg" class="misskey"/>
+			<img src="https://cdn.imashen.cn/img/svg/misskey/misskey.svg" class="misskey"/>
 			<div class="form _panel">
 				<div class="bg">
 					<div class="fade"></div>
@@ -40,7 +33,6 @@
 							<template #n><b>{{ onlineUsersCount }}</b></template>
 						</I18n>
 					</div>
-					<button class="_button _acrylic menu" @click="showMenu"><i class="fas fa-ellipsis-h"></i></button>
 				</div>
 			</div>
 			<nav class="nav">
@@ -148,6 +140,11 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+a {
+  &.github-corner {
+    display: none;
+  }
+}
 .rsqzvsbo {
 	> .top {
 		display: flex;
